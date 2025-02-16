@@ -49,7 +49,7 @@ public class StatsServiceTest {
     public void testBelowAverageSalesMonths() {
         StatsService service = new StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        int expected = 5; // 5 месяцев с продажами ниже среднего
+        int expected = 5;
         int result = service.belowAverageSalesMonths(sales);
         Assertions.assertEquals(expected, result);
     }
@@ -58,7 +58,7 @@ public class StatsServiceTest {
     public void testAboveAverageSalesMonths() {
         StatsService service = new StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        int expected = 5; // 5 месяцев с продажами выше среднего
+        int expected = 5;
         int result = service.aboveAverageSalesMonths(sales);
         Assertions.assertEquals(expected, result);
     }
